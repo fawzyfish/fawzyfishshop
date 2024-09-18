@@ -1,0 +1,101 @@
+/* Stel de achtergrondafbeelding in */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('sea.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Container voor inhoud */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stijl voor knoppen */
+.social-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px; /* Dikkere knoppen */
+    margin: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 20px; /* Vergrote lettergrootte */
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF; /* Blauw kleur */
+    border: 2px solid #007BFF; /* Blauw randkleur */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Specifieke kleuren voor sociale netwerken */
+.instagram {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.instagram:hover {
+    background-color: #0056b3; /* Donkerder blauw bij hover */
+}
+
+.youtube {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.youtube:hover {
+    background-color: #0056b3; /* Donkerder blauw bij hover */
+}
+
+.facebook {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.facebook:hover {
+    background-color: #0056b3; /* Donkerder blauw bij hover */
+}
+
+/* Algemene styling voor navigatie */
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.navigation li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Donkerder blauw bij hover */
+}

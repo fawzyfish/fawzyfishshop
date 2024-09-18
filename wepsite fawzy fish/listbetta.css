@@ -1,0 +1,79 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef7f8;
+}
+
+header {
+    background-color: #0a74da;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #0a74da;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.betta-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.betta-item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.betta-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.betta-item h3 {
+    margin: 10px 0;
+}
+
+.betta-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    background-color: #0a74da;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

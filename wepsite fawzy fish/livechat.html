@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fawzy Fish</title>
+    <link rel="stylesheet" href="livechat.css">
+</head>
+<body>
+    <header>
+        <h1>Fawzy Fish support</h1>
+        <p>click in the down right corner</p>
+    </header>
+    
+    <!-- Chat Icon -->
+    <div id="chat-icon" onclick="toggleChat()">
+        <img src="chat-icon.png" alt="Chat Icon">
+    </div>
+
+    <!-- Chat Popup -->
+    <div id="chat-popup">
+        <div id="chat-header">
+            <h2>Live Chat</h2>
+            <span onclick="toggleChat()" id="close-chat">&times;</span>
+            <!-- Support Code Input -->
+            <input type="text" id="support-code" placeholder="Enter support code">
+            <button onclick="submitCode()">Submit</button>
+        </div>
+        <div id="chat-body">
+            <!-- Chat messages will go here -->
+            <div class="message bot-message">
+                <p>Welcome to Fawzy Fish! How can we assist you today?</p>
+            </div>
+        </div>
+        <div id="chat-footer">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    
+    <!-- Support Details Popup -->
+    <div id="support-details-popup">
+        <div id="support-details-header">
+            <h2>Support Details</h2>
+            <span onclick="closeSupportDetails()" id="close-support-details">&times;</span>
+        </div>
+        <div id="support-details-body">
+            <!-- Support details and chat content will go here -->
+            <p>Here you can see and respond to other details...</p>
+        </div>
+    </div>
+    
+    <script src="livechat.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('sea.jpeg'); /* Corrected to use sea.jpeg */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background in place when scrolling */
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(10, 116, 218, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.cta-button {
+    background-color: #ffa500;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block; /* Ensure padding is applied correctly */
+    margin-top: 20px; /* Add margin to separate from text */
+}
+
+.cta-button:hover {
+    background-color: #ff8c00; /* A slightly different color on hover */
+}
+
+.login-button {
+    background-color: #007bff; /* Blue color for login button */
+    margin-left: 10px; /* Space between buttons */
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* A slightly different color on hover */
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.fish-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+footer {
+    background-color: rgba(10, 116, 218, 0.8); /* Semi-transparent footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
